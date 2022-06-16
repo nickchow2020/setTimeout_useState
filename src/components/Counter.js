@@ -16,10 +16,14 @@ const Counter = ()=>{
     setTimeout(() => {
       setCounter((prevValue) => {
         console.log("hello",prevValue)
+        console.log(counter)
         alert(prevValue)
+        return prevValue
       })
     }, 5000)
   }
+
+  console.log(counter)
 
   return(
     <>
